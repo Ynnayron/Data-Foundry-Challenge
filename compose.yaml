@@ -1,0 +1,22 @@
+services:
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+      resources:
+        limits:
+          memory: 16g
+
+  pipeline:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - ollama
+
+volumes:
+  ollama_data:

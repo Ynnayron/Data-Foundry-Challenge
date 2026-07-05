@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment
+.env
+
+# Generated
+.pytest_cache/
+uv.lock
+
+# Data (downloaded at runtime)
+data/pdfs/
+data/output/
+.DS_Store
