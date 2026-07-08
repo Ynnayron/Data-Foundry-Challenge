@@ -1,0 +1,27 @@
+{
+  "run_id": "20260707T135802Z-58ca24",
+  "localized_catalog": {
+    "stage": "localized_catalog",
+    "records_in": 1,
+    "duplicates_dropped": 0,
+    "validation_errors": [],
+    "missing_fields": {
+      "author": 0,
+      "source": 0
+    },
+    "records_out": 1
+  },
+  "universal_metadata": {
+    "stage": "universal_metadata",
+    "records_in": 1,
+    "duplicates_dropped": 0,
+    "validation_errors": [],
+    "missing_fields": {
+      "document_hash": 0,
+      "cover_path": 0,
+      "category": 0,
+      "year": 1
+    },
+    "records_out": 1
+  }
+}

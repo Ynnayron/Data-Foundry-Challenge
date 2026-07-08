@@ -1,0 +1,72 @@
+[
+  {
+    "id": "15713",
+    "document_hash": "ed6ca8922b5b2e1c3616875f5825a143713f128402db8e2f1df17c25c3fe274b",
+    "cover_path": "processed/covers/a9c3e4c5a074105eecbff9547ff3c67808426d380b9853179a977de21f9e6887.png",
+    "cover_hash": "a9c3e4c5a074105eecbff9547ff3c67808426d380b9853179a977de21f9e6887",
+    "accesses": 25215,
+    "size_bytes": 13968344,
+    "category": "História",
+    "year": null
+  },
+  {
+    "id": "15654",
+    "document_hash": "a365fa512ab2969d0ecb273ea9e8be822b68fbef6575b56551b9a63965825bb3",
+    "cover_path": "processed/covers/300d72305bf38bc533686901804661597c0c6d757d83bf94d2c21fd8f7ffd2e1.png",
+    "cover_hash": "300d72305bf38bc533686901804661597c0c6d757d83bf94d2c21fd8f7ffd2e1",
+    "accesses": 27150,
+    "size_bytes": 1211022,
+    "category": null,
+    "year": null
+  },
+  {
+    "id": "2291",
+    "document_hash": null,
+    "cover_path": null,
+    "cover_hash": null,
+    "accesses": 25215,
+    "size_bytes": null,
+    "category": "História",
+    "year": null
+  },
+  {
+    "id": "18957",
+    "document_hash": "ab80577b2d62f567148377e499a89ea2b4648ffc829cdc514a32280e814afae5",
+    "cover_path": "processed/covers/1a67386178263b418a7223c8d8013cd7826fc4aa002501146ea76dbb6b0ba987.png",
+    "cover_hash": "1a67386178263b418a7223c8d8013cd7826fc4aa002501146ea76dbb6b0ba987",
+    "accesses": 13470,
+    "size_bytes": 2195962,
+    "category": "História",
+    "year": null
+  },
+  {
+    "id": "2432",
+    "document_hash": "49b54433dd9020b1d924c9ee812f0b8c1ef1146433063394ae4c6cc48b99356e",
+    "cover_path": "processed/covers/ceb43ee4334eb9c37d2e4ae22850e06b742a6ba0273b367a825fd9634e1a8c53.png",
+    "cover_hash": "ceb43ee4334eb9c37d2e4ae22850e06b742a6ba0273b367a825fd9634e1a8c53",
+    "accesses": 11843,
+    "size_bytes": 398519,
+    "category": "História",
+    "year": null
+  },
+  {
+    "id": "19202",
+    "document_hash": "070b3f6bd6ed37f9741af758aeb4971b494cb4a9ffeda68652561ce0d6bef1c6",
+    "cover_path": "processed/covers/4805f7428e94b8daf088f0155cf72fbe18b7d59aaaf844638b1d561b488b9f0b.png",
+    "cover_hash": "4805f7428e94b8daf088f0155cf72fbe18b7d59aaaf844638b1d561b488b9f0b",
+    "accesses": 10062,
+    "size_bytes": 994980,
+    "category": "História",
+    "year": null
+  },
+  {
+    "id": "19322",
+    "document_hash": "b1c230a30587c460ea9f17abced78dc588947053ea5ce9b4867b434fb3400da3",
+    "cover_path": "processed/covers/c2acd2eba1a512df009f208b38e20a0d165742bbdbb315a9c48135aee5306b17.png",
+    "cover_hash": "c2acd2eba1a512df009f208b38e20a0d165742bbdbb315a9c48135aee5306b17",
+    "accesses": 9440,
+    "size_bytes": 1356796,
+    "category": "História",
+    "year": null
+  }
+]

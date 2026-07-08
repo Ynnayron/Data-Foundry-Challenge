@@ -1,0 +1,50 @@
+{
+  "total_files": 9,
+  "unique_hashes": 6,
+  "duplicates": {
+    "a365fa512ab2969d0ecb273ea9e8be822b68fbef6575b56551b9a63965825bb3": [
+      "15640.pdf",
+      "15654.pdf",
+      "2148.pdf",
+      "2268.pdf"
+    ]
+  },
+  "files": {
+    "15713.pdf": {
+      "sha256": "ed6ca8922b5b2e1c3616875f5825a143713f128402db8e2f1df17c25c3fe274b",
+      "size_bytes": 13968344
+    },
+    "15640.pdf": {
+      "sha256": "a365fa512ab2969d0ecb273ea9e8be822b68fbef6575b56551b9a63965825bb3",
+      "size_bytes": 1211022
+    },
+    "15654.pdf": {
+      "sha256": "a365fa512ab2969d0ecb273ea9e8be822b68fbef6575b56551b9a63965825bb3",
+      "size_bytes": 1211022
+    },
+    "18957.pdf": {
+      "sha256": "ab80577b2d62f567148377e499a89ea2b4648ffc829cdc514a32280e814afae5",
+      "size_bytes": 2195962
+    },
+    "19202.pdf": {
+      "sha256": "070b3f6bd6ed37f9741af758aeb4971b494cb4a9ffeda68652561ce0d6bef1c6",
+      "size_bytes": 994980
+    },
+    "19322.pdf": {
+      "sha256": "b1c230a30587c460ea9f17abced78dc588947053ea5ce9b4867b434fb3400da3",
+      "size_bytes": 1356796
+    },
+    "2148.pdf": {
+      "sha256": "a365fa512ab2969d0ecb273ea9e8be822b68fbef6575b56551b9a63965825bb3",
+      "size_bytes": 1211022
+    },
+    "2268.pdf": {
+      "sha256": "a365fa512ab2969d0ecb273ea9e8be822b68fbef6575b56551b9a63965825bb3",
+      "size_bytes": 1211022
+    },
+    "2432.pdf": {
+      "sha256": "49b54433dd9020b1d924c9ee812f0b8c1ef1146433063394ae4c6cc48b99356e",
+      "size_bytes": 398519
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "universal_metadata",
+  "records_in": 10,
+  "duplicates_dropped": 3,
+  "validation_errors": [],
+  "missing_fields": {
+    "document_hash": 1,
+    "cover_path": 1,
+    "category": 1,
+    "year": 7
+  },
+  "records_out": 7
+}
