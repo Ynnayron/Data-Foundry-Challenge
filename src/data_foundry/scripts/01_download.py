@@ -1,5 +1,6 @@
-"""
-Refactored to expose a per-book function (process_entry) so the Prefect flow
+"""Stage 1 - scrape the catalog listing and download PDFs into the RAW layer.
+
+Refactored to expose a per-book function (`process_entry`) so the Prefect flow
 can fan it out across a thread pool (scalability) instead of one book at a time.
 Also supports pagination (MAX_PAGES / MIN_BOOKS) instead of a single hardcoded page.
 """

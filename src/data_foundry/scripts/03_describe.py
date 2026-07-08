@@ -84,7 +84,7 @@ def describe_document(
             resp = client.chat.completions.create(
                 model=LLM_MODEL,
                 messages=[{"role": "user", "content": content}],
-                timeout=120,
+                timeout=300,
             )
             return resp.choices[0].message.content.strip()
         except Exception as e:

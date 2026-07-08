@@ -1,4 +1,4 @@
-"""
+"""Stage 2 - compute SHA256 hashes for downloaded PDFs (PROCESSED layer).
 
 Also a data-quality checkpoint: flags byte-identical duplicate files across
 different `code`s, which downstream stages use to avoid describing/translating

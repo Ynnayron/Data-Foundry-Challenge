@@ -1,12 +1,23 @@
+"""Stage 4 - translate titles to EN/ES/FR (PROCESSED layer)."""
+
 import json
+import threading
 
 from openai import OpenAI
 
-from data_foundry.config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL, OUTPUT_DIR
+from data_foundry.config import (
+    LLM_API_KEY,
+    LLM_BASE_URL,
+    LLM_MODEL,
+    MAX_LLM_CONCURRENCY,
+    PROCESSED_DIR,
+    RAW_DIR,
+)
 
 TARGET_LANGUAGES = {"en": "English", "es": "Spanish", "fr": "French"}
 
 client = OpenAI(base_url=LLM_BASE_URL, api_key=LLM_API_KEY)
+_LLM_SEMAPHORE = threading.Semaphore(MAX_LLM_CONCURRENCY)
 
 
 def translate_title(
@@ -32,26 +43,35 @@ def translate_title(
         f"Title: {title}"
     )
 
-    try:
-        resp = client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            timeout=60,
-        )
-        result = resp.choices[0].message.content.strip()
-        result = result.strip("\"'")
-        if "\n" in result:
-            result = result.split("\n")[0].strip()
-        return result
-    except Exception as e:
-        print(f"  LLM error: {e}")
+    with _LLM_SEMAPHORE:
+        try:
+            resp = client.chat.completions.create(
+                model=LLM_MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                timeout=60,
+            )
+            result = resp.choices[0].message.content.strip()
+            result = result.strip("\"'")
+            if "\n" in result:
+                result = result.split("\n")[0].strip()
+            return result
+        except Exception as e:
+            print(f"  LLM error: {e}")
     return None
 
 
-def main():
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+def translate_entry(title: str, metadata: dict | None) -> dict:
+    """Pure per-book function: translate one title to all target languages."""
+    entry_translations = {"original": title}
+    for lang_key, lang_name in TARGET_LANGUAGES.items():
+        entry_translations[lang_key] = translate_title(title, lang_name, metadata)
+    return entry_translations
 
-    catalog_path = OUTPUT_DIR / "catalog.json"
+
+def main():
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+
+    catalog_path = RAW_DIR / "catalog.json"
     if not catalog_path.exists():
         print("catalog.json not found. Run 01_download.py first.")
         return
@@ -59,46 +79,31 @@ def main():
     with open(catalog_path, encoding="utf-8") as f:
         catalog = json.load(f)
 
-    metadata_path = OUTPUT_DIR / "metadata.json"
+    metadata_path = RAW_DIR / "metadata.json"
+    metadata = {}
     if metadata_path.exists():
         with open(metadata_path, encoding="utf-8") as f:
             metadata = json.load(f)
-    else:
-        metadata = {}
 
-    trans_path = OUTPUT_DIR / "translations.json"
+    trans_path = PROCESSED_DIR / "translations.json"
+    translations = {}
     if trans_path.exists():
         with open(trans_path, encoding="utf-8") as f:
             translations = json.load(f)
-    else:
-        translations = {}
 
-    print(
-        f"Translating {len(catalog)} titles to {', '.join(TARGET_LANGUAGES.values())}..."
-    )
-    print(f"Using model: {LLM_MODEL} via {LLM_BASE_URL}")
+    print(f"Translating {len(catalog)} titles to {', '.join(TARGET_LANGUAGES.values())}...")
+    print(f"Using model: {LLM_MODEL} via {LLM_BASE_URL} (max concurrency={MAX_LLM_CONCURRENCY})")
 
     for i, entry in enumerate(catalog):
         code = entry["code"]
         title = entry["title"]
 
         if code in translations:
-            print(
-                f"[{i + 1}/{len(catalog)}] {title[:50]} — already translated, skipping"
-            )
+            print(f"[{i + 1}/{len(catalog)}] {title[:50]} - already translated, skipping")
             continue
 
         print(f"[{i + 1}/{len(catalog)}] {title[:50]}...")
-
-        meta = metadata.get(code)
-        entry_translations = {"original": title}
-        for lang_key, lang_name in TARGET_LANGUAGES.items():
-            translated = translate_title(title, lang_name, meta)
-            entry_translations[lang_key] = translated
-            if translated:
-                print(f"  {lang_key}: {translated[:60]}")
-
-        translations[code] = entry_translations
+        translations[code] = translate_entry(title, metadata.get(code))
 
         with open(trans_path, "w", encoding="utf-8") as f:
             json.dump(translations, f, ensure_ascii=False, indent=2)

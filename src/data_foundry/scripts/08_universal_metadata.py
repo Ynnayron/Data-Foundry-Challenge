@@ -1,30 +1,29 @@
+""" assemble universal_metadata.json (language-independent dataset).
+"""
+
 import json
 
-from data_foundry.config import OUTPUT_DIR, PDF_DIR
+from data_foundry.config import PDF_DIR, PROCESSED_DIR, RAW_DIR, RUN_DIR, ensure_dirs
+from data_foundry.quality import (
+    build_quality_report,
+    count_missing,
+    dedupe_by_key,
+    normalize_record,
+    validate_records,
+)
+from data_foundry.schemas import UniversalMetadataEntry
 
 
-def load_json(name: str) -> dict | list:
-    path = OUTPUT_DIR / name
+def load_json(base, name: str) -> dict | list:
+    path = base / name
     if path.exists():
         with open(path, encoding="utf-8") as f:
             return json.load(f)
     return {} if name != "catalog.json" else []
 
 
-def main():
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    catalog = load_json("catalog.json")
-    if not catalog:
-        print("catalog.json not found. Run 01_download.py first.")
-        return
-
-    metadata = load_json("metadata.json")
-    hashes_data = load_json("hashes.json")
-    hashes = hashes_data.get("files", {}) if isinstance(hashes_data, dict) else {}
-    covers = load_json("covers.json")
-
-    metadata_records = []
+def assemble_universal_metadata(catalog: list, metadata: dict, hashes: dict, covers: dict) -> list[dict]:
+    records = []
     for entry in catalog:
         code = entry["code"]
         meta = metadata.get(code, {})
@@ -51,21 +50,58 @@ def main():
             "accesses": accesses,
             "size_bytes": size_bytes,
             "category": meta.get("category"),
-            "language": meta.get("language"),
-            "institution": meta.get("institution"),
             "year": meta.get("year"),
-            "download_url": meta.get("download_url") or entry.get("download_url"),
         }
-        metadata_records.append(record)
+        records.append(normalize_record(record))
+    return records
 
-    output_path = OUTPUT_DIR / "universal_metadata.json"
+
+def main():
+    ensure_dirs()
+
+    catalog = load_json(RAW_DIR, "catalog.json")
+    if not catalog:
+        print("catalog.json not found")
+        return
+
+    metadata = load_json(RAW_DIR, "metadata.json")
+    hashes_data = load_json(PROCESSED_DIR, "hashes.json")
+    hashes = hashes_data.get("files", {}) if isinstance(hashes_data, dict) else {}
+    covers = load_json(PROCESSED_DIR, "covers.json")
+
+    metadata_records = assemble_universal_metadata(catalog, metadata, hashes, covers)
+
+    # Dedup by document_hash catches byte-identical PDFs registered under different codes.
+    deduped, dropped = dedupe_by_key(
+        metadata_records, key_fn=lambda r: r["document_hash"]
+    )
+    valid, errors = validate_records(deduped, UniversalMetadataEntry)
+    missing = count_missing(valid, ["document_hash", "cover_path", "category", "year"])
+
+    report = build_quality_report(
+        stage="universal_metadata",
+        total_in=len(metadata_records),
+        duplicates_dropped=len(dropped),
+        validation_errors=errors,
+        missing_fields=missing,
+    )
+
+    output_path = RUN_DIR / "universal_metadata.json"
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(metadata_records, f, ensure_ascii=False, indent=2)
+        json.dump(valid, f, ensure_ascii=False, indent=2)
 
-    with_hash = sum(1 for r in metadata_records if r["document_hash"])
-    with_cover = sum(1 for r in metadata_records if r["cover_path"])
-    print(f"Done. {len(metadata_records)} entries assembled.")
+    quality_path = RUN_DIR / "universal_metadata.quality.json"
+    with open(quality_path, "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
+
+    with_hash = sum(1 for r in valid if r["document_hash"])
+    with_cover = sum(1 for r in valid if r["cover_path"])
+    print(f"Done. {len(valid)} entries assembled.")
     print(f"  With hash: {with_hash}, with cover: {with_cover}")
+    if dropped:
+        print(f"  Dropped {len(dropped)} duplicate document(s) (identical content hash).")
+    if errors:
+        print(f"  {len(errors)} record(s) failed schema validation, see {quality_path.name}")
     print(f"Output saved to {output_path}")
 
 
