@@ -1,3 +1,14 @@
+"""Central configuration: env vars, LLM settings, and the layered data paths.
+
+Data architecture (3 layers, see README for rationale):
+  data/raw/        immutable inputs: scraped listing + downloaded PDFs, keyed by `code`
+  data/processed/  derived, cacheable per-book artifacts: hashes, descriptions,
+                    translations, covers. Reused across runs (never re-done if present).
+  data/runs/<id>/  one immutable snapshot per pipeline execution: the two final
+                    datasets + a manifest. Re-runs never overwrite previous ones.
+  data/output/latest -> symlink to the most recent successful data/runs/<id>
+"""
+
 import os
 import re
 import uuid
@@ -22,25 +33,30 @@ def list_url(page: int = 1, skip: int = 0, page_size: int = 10) -> str:
     )
 
 
+# Backwards-compatible constant (page 1), individual scripts / older code can still use it.
 LIST_URL = list_url()
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = REPO_ROOT / "data"
 
+# --- Layer 1: raw (immutable, shared across runs) ---
 RAW_DIR = DATA_DIR / "raw"
 PDF_DIR = RAW_DIR / "pdfs"
 
+# --- Layer 2: processed (derived, cacheable, shared across runs) ---
 PROCESSED_DIR = DATA_DIR / "processed"
 COVERS_DIR = PROCESSED_DIR / "covers"
 
+# --- Layer 3: runs (versioned, immutable snapshots) ---
 RUNS_DIR = DATA_DIR / "runs"
 OUTPUT_DIR = DATA_DIR / "output"  # holds only the `latest` pointer
 
+# Backwards-compat alias used by the pre-existing scripts before this refactor.
 LEGACY_OUTPUT_DIR = PROCESSED_DIR
 
 
 def _make_run_id() -> str:
-    ts = datetime.now().strftime("%Y%m%dT%H%M%S")
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     short = uuid.uuid4().hex[:6]
     return f"{ts}-{short}"
 
