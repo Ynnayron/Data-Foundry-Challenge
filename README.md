@@ -156,9 +156,7 @@ Every run gets a `run_id` (UTC timestamp + short hash, or pinned via
 `RUN_ID` in `.env` for reruns/CI) and writes to `data/runs/<run_id>/` —
 previous runs are never overwritten. On success, `data/output/latest` is
 repointed (symlink, with a copy fallback on filesystems without symlink
-support) to the most recent run. `make clean-runs` (or the equivalent
-manual cleanup) keeps only the 5 most recent runs if the directory grows
-too large.
+support) to the most recent run.
 
 ## Tests
 
