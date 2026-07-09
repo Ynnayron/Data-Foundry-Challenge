@@ -7,21 +7,21 @@
   },
   "15654": {
     "original": "A República é incontestável",
-    "en": "The Republic is unquestionable.",
+    "en": "The Republic is unquestionable",
     "es": "La República es innegable",
     "fr": "La République est incontestable"
   },
   "2268": {
     "original": "História do Brasil",
     "en": "History of Brazil",
-    "es": "Historia del Brasil",
+    "es": "Historia de Brasil",
     "fr": "Histoire du Brésil"
   },
   "2291": {
     "original": "A Rebelião das Massas",
-    "en": "The Peasant Revolt",
+    "en": "The Rebellion of the Masses",
     "es": "La Rebelión de las Masas",
-    "fr": "La Révolte du peuple"
+    "fr": "La Révolte des masses"
   },
   "2148": {
     "original": "Historia do Brasil: 1500-1627",
@@ -37,14 +37,14 @@
   },
   "18957": {
     "original": "De profecia e inquisição",
-    "en": "On Prophecy and Inquisition",
+    "en": "On Prophecy and the Inquisition",
     "es": "De profecía e inquisición",
     "fr": "De la prophétie et de l'Inquisition"
   },
   "2432": {
     "original": "O Dezoito de Brumário de Louis Bonaparte",
     "en": "The Eighteenth of Brumaire of Louis Bonaparte",
-    "es": "El Dieciocho de Brumario de Luis Bonaparte",
+    "es": "El Dieciocho de Brumaire de Luis Bonaparte",
     "fr": "Le Dix-huit Brumaire de Louis Bonaparte"
   },
   "19202": {
@@ -58,5 +58,65 @@
     "en": "Southern Populations of Brazil",
     "es": "Poblaciones méridionales de Brasil",
     "fr": "Les populations méridionales du Brésil"
+  },
+  "18948": {
+    "original": "Capítulos de história colonial",
+    "en": "Chapters of Colonial History",
+    "es": "Capítulos de historia colonial",
+    "fr": "Chapitres d'histoire coloniale"
+  },
+  "18530": {
+    "original": "A abolição",
+    "en": "The Abolition",
+    "es": "La abolición",
+    "fr": "L’abolition"
+  },
+  "15633": {
+    "original": "O povo e o trono: profissão e fé política",
+    "en": "The people and the throne: profession and political faith",
+    "es": "El pueblo y el trono: profesión y fe política",
+    "fr": "Le peuple et le trône : profession et foi politique"
+  },
+  "19009": {
+    "original": "A independência e o império do Brasil",
+    "en": "The independence and the empire of Brazil",
+    "es": "La independencia y el imperio del Brasil",
+    "fr": "L'indépendance et l'empire du Brésil"
+  },
+  "16793": {
+    "original": "O que eu vi, o que nós veremos (com ilustrações)",
+    "en": "What I saw, what we will see (with illustrations)",
+    "es": "Lo que vi, lo que nosotros veremos (con ilustraciones)",
+    "fr": "Ce que j'ai vu, ce que nous verrons (avec illustrations)"
+  },
+  "15708": {
+    "original": "Carta aos abolicionistas ingleses",
+    "en": "Letter to the English Abolitionists",
+    "es": "Carta a los abolicionistas ingleses",
+    "fr": "Lettre aux abolitionnistes anglais"
+  },
+  "15712": {
+    "original": "Campanha abolicionista no Recife: eleições 1884: discurso de Joaquim Nabuco",
+    "en": "Abolitionist Campaign in Recife: Elections of 1884: Speech by Joaquim Nabuco",
+    "es": "Campañas abolicionistas en Recife: elecciones 1884: discurso de Joaquim Nabuco",
+    "fr": "Campagne abolitionniste à Recife : élection de 1884 : discours de Joaquim Nabuco"
+  },
+  "15643": {
+    "original": "Agradecimento aos pernambucanos",
+    "en": "Thanks to the people of Pernambuco",
+    "es": "Agradecimiento a los pernambucanos",
+    "fr": "Remerciements aux Pernambécans"
+  },
+  "15711": {
+    "original": "Discursos parlamentares: 1849-1910",
+    "en": "Parliamentary speeches: 1849-1910",
+    "es": "Discursos parlamentarios: 1849-1910",
+    "fr": "Discours parlementaires : 1849-1910"
+  },
+  "19222": {
+    "original": "O Rio de Janeiro do meu tempo",
+    "en": "The Rio de Janeiro of my time",
+    "es": "El Río de Janeiro de mi tiempo",
+    "fr": "Le Rio de Janeiro de mon temps"
   }
 }

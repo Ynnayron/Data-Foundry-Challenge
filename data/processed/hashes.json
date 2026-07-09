@@ -1,12 +1,16 @@
 {
-  "total_files": 9,
-  "unique_hashes": 6,
+  "total_files": 20,
+  "unique_hashes": 16,
   "duplicates": {
     "a365fa512ab2969d0ecb273ea9e8be822b68fbef6575b56551b9a63965825bb3": [
       "15640.pdf",
       "15654.pdf",
       "2148.pdf",
       "2268.pdf"
+    ],
+    "79cabdf050671effea4198a373f8f754e9a8bad1224a0ff3e8667aae17dbf702": [
+      "15633.pdf",
+      "16793.pdf"
     ]
   },
   "files": {
@@ -45,6 +49,50 @@
     "2432.pdf": {
       "sha256": "49b54433dd9020b1d924c9ee812f0b8c1ef1146433063394ae4c6cc48b99356e",
       "size_bytes": 398519
+    },
+    "15633.pdf": {
+      "sha256": "79cabdf050671effea4198a373f8f754e9a8bad1224a0ff3e8667aae17dbf702",
+      "size_bytes": 434328
+    },
+    "15643.pdf": {
+      "sha256": "60417f18a4f041e799890cd7b07a80a14c03073831017ad26f8d9bb8ed87b250",
+      "size_bytes": 2807757
+    },
+    "15708.pdf": {
+      "sha256": "7a7ca2ef69f8242d5d60f8625b3b9774bc0685102f6dd95028ddc51c46930273",
+      "size_bytes": 10676344
+    },
+    "15711.pdf": {
+      "sha256": "caafd91bf2ef7eb1bfad77e8277f34a20a58152c77e416449888ed36031d8aa1",
+      "size_bytes": 52368710
+    },
+    "15712.pdf": {
+      "sha256": "0968b9f39ef515d7a2bbb2124bfe644385d5d1cda98904f29e456811e5b268ae",
+      "size_bytes": 26275498
+    },
+    "16793.pdf": {
+      "sha256": "79cabdf050671effea4198a373f8f754e9a8bad1224a0ff3e8667aae17dbf702",
+      "size_bytes": 434328
+    },
+    "18530.pdf": {
+      "sha256": "4963a7df4cfef2afe5f7acd116c9bad10b545e6c61a517337c32ec6827a4e9c2",
+      "size_bytes": 5367713
+    },
+    "18948.pdf": {
+      "sha256": "d05d85c2d4d071c5b9cd52e9ae64a9a6335d81c1f646c145c4bc8834f6b921ab",
+      "size_bytes": 2253003
+    },
+    "19009.pdf": {
+      "sha256": "3073a7d2df5656c3aee62e9cd3df89e7b6951d995a80295ed5ef54c815ca97a5",
+      "size_bytes": 1692333
+    },
+    "19222.pdf": {
+      "sha256": "c0fe7f8921b96e0442a8c45d9b2251da54fb35ef1f601dfb2b108e1f61c2fb2a",
+      "size_bytes": 4247989
+    },
+    "2291.pdf": {
+      "sha256": "2db002752efa7dbc69f7c4a49dfcdf772013ab943125fe0896223dc906fe27d1",
+      "size_bytes": 450569
     }
   }
 }

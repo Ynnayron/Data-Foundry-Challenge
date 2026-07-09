@@ -1,6 +1,6 @@
 """Stage 1 - scrape the catalog listing and download PDFs into the RAW layer.
 
-Refactored to expose a per-book function (`process_entry`) so the Prefect flow
+Refactored to expose a per-book function so the prefect flow
 can fan it out across a thread pool (scalability) instead of one book at a time.
 Also supports pagination (MAX_PAGES / MIN_BOOKS) instead of a single hardcoded page.
 """
@@ -60,7 +60,7 @@ def parse_listing(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
     table = soup.find("table", id="res")
     if not table:
-        print("ERROR: Could not find results table (#res)")
+        print("ERROR: Could not find results")
         return []
 
     tbody = table.find("tbody")
@@ -106,8 +106,6 @@ def parse_listing(html: str) -> list[dict]:
 
 
 def scrape_catalog(max_pages: int = MAX_PAGES, min_books: int = MIN_BOOKS) -> list[dict]:
-    """Scrape one or more listing pages until `min_books` unique entries are found
-    or a safety limit is hit. This is the pagination hook for scaling beyond 10 books."""
     seen: dict[str, dict] = {}
     page = 1
     hard_limit = max(max_pages, 1) + 20  # safety valve
@@ -203,8 +201,6 @@ def download_pdf(url: str, filepath: Path) -> bool:
 
 
 def process_entry(entry: dict) -> tuple[dict, dict]:
-    """Fetch detail page + download the PDF for a single catalog entry.
-    Pure function of one entry -> safe to fan out with a thread pool / Prefect .map()."""
     code = entry["code"]
     entry = dict(entry)
 

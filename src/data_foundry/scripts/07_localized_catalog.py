@@ -31,6 +31,8 @@ def assemble_localized_catalog(
 ) -> list[dict]:
     localized = []
     for entry in catalog:
+        if not entry.get("downloaded"):
+            continue
         code = entry["code"]
         title_trans = translations.get(code, {})
         desc_data = descriptions.get(code, {})

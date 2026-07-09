@@ -25,6 +25,8 @@ def load_json(base, name: str) -> dict | list:
 def assemble_universal_metadata(catalog: list, metadata: dict, hashes: dict, covers: dict) -> list[dict]:
     records = []
     for entry in catalog:
+        if not entry.get("downloaded"):
+            continue
         code = entry["code"]
         meta = metadata.get(code, {})
         file_hash = hashes.get(f"{code}.pdf", {})

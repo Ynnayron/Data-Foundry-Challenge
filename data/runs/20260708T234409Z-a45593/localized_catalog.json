@@ -1,0 +1,342 @@
+[
+  {
+    "id": "15713",
+    "title": {
+      "pt": "A escravidão",
+      "en": "Slavery",
+      "es": "La esclavitud",
+      "fr": "L'esclavage"
+    },
+    "description": {
+      "pt": null,
+      "en": "Here is a concise description of the document:\n\n“The Slavery” is a text by Joaquim Nabuco that deeply analyzes the issue of slavery in Brazil. Published by the Joaquim Nabuco Foundation and accessed by more than 39,000 people, the document likely presents arguments against slavery, focusing on its social and moral horrors, based on historical research. The work falls into the category of History, highlighting a crucial period in the formation of Brazil.",
+      "es": "Aquí hay una descripción concisa del documento:\n\n“La esclavitud” es un texto de Joaquim Nabuco que analiza profundamente la cuestión de la esclavitud en Brasil. Publicado por la Fundación Joaquim Nabuco y accedido por más de 39 mil personas, el documento probablemente presenta argumentos contra la esclavitud, enfocándose en sus horrores sociales y morales, basados en investigaciones históricas. La obra se encuadra en la categoría de Historia, destacando un período crucial de la formación del Brasil.",
+      "fr": "Voici une description concise du document :\n\n« L’esclavage » est un texte de Joaquim Nabuco qui analyse en profondeur la question de l’esclavage au Brésil. Publié par la Fundação Joaquim Nabuco et consulté par plus de 39 000 personnes, le document présente probablement des arguments contre l’esclavage, axés sur ses horreurs sociales et morales, basés sur des recherches historiques. Le travail se situe dans la catégorie de l'Histoire, mettant en évidence une période cruciale de la formation du Brésil."
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "15654",
+    "title": {
+      "pt": "A República é incontestável",
+      "en": "The Republic is unquestionable",
+      "es": "La República es innegable",
+      "fr": "La République est incontestable"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "2268",
+    "title": {
+      "pt": "História do Brasil",
+      "en": "History of Brazil",
+      "es": "Historia de Brasil",
+      "fr": "Histoire du Brésil"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": "“Historia del Brasil”, de Frei Vicente de Salvador, es un relato inicial sobre el descubrimiento de Brasil y sus habitantes nativos, aves y animales. La obra, escrita en 1627, explora las motivaciones detrás de la expedición portuguesa, utilizando un enfoque filosófico influenciado por la lógica y la metafísica de la época. A pesar de ser un texto histórico antiguo, ofrece una visión sobre los primeros contactos entre Brasil y Europa, con foco en la descripción de la naturaleza y de los pueblos originarios.",
+      "fr": "Voici une description du document en portugais :\n\n“Histoire du Brésil”, de Frei Vicente de Salvador, est un récit initial sur la découverte du Brésil et de ses habitants natifs, oiseaux et animaux. L’œuvre, écrite en 1627, explore les motivations derrière l’expédition portugaise, utilisant une approche philosophique influencée par la logique et la métaphysique de l'époque. Malgré étant un texte historique ancien, il offre un regard sur les premiers contacts entre le Brésil et l'Europe, avec un accent sur la description de la nature et des peuples originaires."
+    },
+    "author": "Frei Vicente de Salvador",
+    "source": "[cv] CultVox"
+  },
+  {
+    "id": "2291",
+    "title": {
+      "pt": "A Rebelião das Massas",
+      "en": "The Rebellion of the Masses",
+      "es": "La Rebelión de las Masas",
+      "fr": "La Révolte des masses"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "José Ortega y Gasset",
+    "source": "[cv] CultVox"
+  },
+  {
+    "id": "2148",
+    "title": {
+      "pt": "Historia do Brasil: 1500-1627",
+      "en": "History of Brazil: 1500-1627",
+      "es": "Historia del Brasil: 1500-1627",
+      "fr": "Histoire du Brésil : 1500-1627"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Frei Vicente de Salvador",
+    "source": "[bn] Fundação Biblioteca Nacional"
+  },
+  {
+    "id": "15640",
+    "title": {
+      "pt": "O erro do Imperador",
+      "en": "The Emperor's Error",
+      "es": "El error del Emperador",
+      "fr": "L'erreur de l'Empereur"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "18957",
+    "title": {
+      "pt": "De profecia e inquisição",
+      "en": "On Prophecy and the Inquisition",
+      "es": "De profecía e inquisición",
+      "fr": "De la prophétie et de l'Inquisition"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Pe. Antônio Vieira",
+    "source": "[sf] Senado Federal"
+  },
+  {
+    "id": "2432",
+    "title": {
+      "pt": "O Dezoito de Brumário de Louis Bonaparte",
+      "en": "The Eighteenth of Brumaire of Louis Bonaparte",
+      "es": "El Dieciocho de Brumaire de Luis Bonaparte",
+      "fr": "Le Dix-huit Brumaire de Louis Bonaparte"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Karl Marx",
+    "source": "[ma] Marxists Internet Archive"
+  },
+  {
+    "id": "19202",
+    "title": {
+      "pt": "O abolicionismo",
+      "en": "The Abolitionism",
+      "es": "El abolicionismo",
+      "fr": "L'abolitionnisme"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[sf] Senado Federal"
+  },
+  {
+    "id": "19322",
+    "title": {
+      "pt": "Populações meridionais do Brasil",
+      "en": "Southern Populations of Brazil",
+      "es": "Poblaciones méridionales de Brasil",
+      "fr": "Les populations méridionales du Brésil"
+    },
+    "description": {
+      "pt": null,
+      "en": "Here is a concise description of the document \"Southern Populations of Brazil\":\n\nThis document, written by Oliveira Viana, analyzes the populations of southern Brazil, exploring their history, culture and characteristics. The work, published by the Federal Senate, likely investigates the formation and development of these communities over time, with the aim of better understanding the diversity of the Brazilian experience in the southern territory. With a significant access (9,440), it suggests a highly interesting historical work within the category “History”.",
+      "es": "Aquí está una descripción concisa del documento “Poblaciones Meridionales del Brasil”:\n\nEste documento, escrito por Oliveira Viana, analiza las poblaciones del sur de Brasil, explorando su historia, cultura y características. La obra, publicada por el Senado Federal, probablemente investiga la formación y desarrollo de estas comunidades a lo largo del tiempo, con el objetivo de comprender mejor la diversidad de la experiencia brasileña en el territorio meridional. Con un acceso significativo (9.440), sugiere una obra de gran interés histórico dentro de la categoría “Historia”.",
+      "fr": "Voici une description concise du document « Populações Meridionales du Brésil » :\n\nCe document, rédigé par Oliveira Viana, analyse les populations du sud du Brésil, explorant leur histoire, leur culture et leurs caractéristiques. L'œuvre, publiée par le Sénat Fédéral, examine vraisemblablement la formation et l’évolution de ces communautés au fil du temps, dans le but de mieux comprendre la diversité de l’expérience brésilienne sur le territoire méridional. Avec un échantillon significatif (9 440), il suggère une œuvre d'un grand intérêt historique au sein de la catégorie « Histoire »."
+    },
+    "author": "Oliveira Viana",
+    "source": "[sf] Senado Federal"
+  },
+  {
+    "id": "18948",
+    "title": {
+      "pt": "Capítulos de história colonial",
+      "en": "Chapters of Colonial History",
+      "es": "Capítulos de historia colonial",
+      "fr": "Chapitres d'histoire coloniale"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "João Capistrano de Abreu",
+    "source": "[sf] Senado Federal"
+  },
+  {
+    "id": "18530",
+    "title": {
+      "pt": "A abolição",
+      "en": "The Abolition",
+      "es": "La abolición",
+      "fr": "L’abolition"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Osório Duque Estrada",
+    "source": "[sf] Senado Federal"
+  },
+  {
+    "id": "15633",
+    "title": {
+      "pt": "O povo e o trono: profissão e fé política",
+      "en": "The people and the throne: profession and political faith",
+      "es": "El pueblo y el trono: profesión y fe política",
+      "fr": "Le peuple et le trône : profession et foi politique"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "19009",
+    "title": {
+      "pt": "A independência e o império do Brasil",
+      "en": "The independence and the empire of Brazil",
+      "es": "La independencia y el imperio del Brasil",
+      "fr": "L'indépendance et l'empire du Brésil"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Alexandre José de Melo Morais",
+    "source": "[sf] Senado Federal"
+  },
+  {
+    "id": "16793",
+    "title": {
+      "pt": "O que eu vi, o que nós veremos (com ilustrações)",
+      "en": "What I saw, what we will see (with illustrations)",
+      "es": "Lo que vi, lo que nosotros veremos (con ilustraciones)",
+      "fr": "Ce que j'ai vu, ce que nous verrons (avec illustrations)"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Alberto Santos Dumont",
+    "source": "[bi] Biblioteca Virtual de Literatura"
+  },
+  {
+    "id": "15708",
+    "title": {
+      "pt": "Carta aos abolicionistas ingleses",
+      "en": "Letter to the English Abolitionists",
+      "es": "Carta a los abolicionistas ingleses",
+      "fr": "Lettre aux abolitionnistes anglais"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "15712",
+    "title": {
+      "pt": "Campanha abolicionista no Recife: eleições 1884: discurso de Joaquim Nabuco",
+      "en": "Abolitionist Campaign in Recife: Elections of 1884: Speech by Joaquim Nabuco",
+      "es": "Campañas abolicionistas en Recife: elecciones 1884: discurso de Joaquim Nabuco",
+      "fr": "Campagne abolitionniste à Recife : élection de 1884 : discours de Joaquim Nabuco"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "15643",
+    "title": {
+      "pt": "Agradecimento aos pernambucanos",
+      "en": "Thanks to the people of Pernambuco",
+      "es": "Agradecimiento a los pernambucanos",
+      "fr": "Remerciements aux Pernambécans"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "15711",
+    "title": {
+      "pt": "Discursos parlamentares: 1849-1910",
+      "en": "Parliamentary speeches: 1849-1910",
+      "es": "Discursos parlamentarios: 1849-1910",
+      "fr": "Discours parlementaires : 1849-1910"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco"
+  },
+  {
+    "id": "19222",
+    "title": {
+      "pt": "O Rio de Janeiro do meu tempo",
+      "en": "The Rio de Janeiro of my time",
+      "es": "El Río de Janeiro de mi tiempo",
+      "fr": "Le Rio de Janeiro de mon temps"
+    },
+    "description": {
+      "pt": null,
+      "en": null,
+      "es": null,
+      "fr": null
+    },
+    "author": "Luís Edmundo",
+    "source": "[sf] Senado Federal"
+  }
+]

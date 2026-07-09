@@ -1,0 +1,11 @@
+{
+  "stage": "localized_catalog",
+  "records_in": 20,
+  "duplicates_dropped": 0,
+  "validation_errors": [],
+  "missing_fields": {
+    "author": 0,
+    "source": 0
+  },
+  "records_out": 20
+}

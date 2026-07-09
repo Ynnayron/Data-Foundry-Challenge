@@ -1,4 +1,19 @@
-#Event-driven orchestration of the pipeline, built on Prefect.
+"""Event-driven orchestration of the Data Foundry pipeline, built on Prefect.
+
+Why this replaces the old main.py:
+  main.py ran 8 scripts as fixed `subprocess` calls in a hardcoded list, one at
+  a time, regardless of whether earlier steps actually produced new data.
+  Here, every stage is a `@task`. Downstream tasks receive the *return value*
+  of upstream tasks as their input, so Prefect's dependency graph is derived
+  from real data availability, not from a hand-maintained sequence. Per-book
+  work (download, hash, describe, translate, cover) is fanned out with
+  `.map()` so books are processed concurrently (scalability), each task is
+  retried on failure independently, and a failed book doesn't take down the
+  whole run.
+
+Each stage module still exposes a standalone `main()` (used by `make download`,
+`make hash`, etc.) built on top of the same pure per-item functions used here.
+"""
 
 import importlib
 import json
@@ -21,6 +36,8 @@ from data_foundry.schemas import LocalizedCatalogEntry, UniversalMetadataEntry
 
 
 def _load(name: str):
+    """Scripts are named 01_download.py etc. — not valid `import` identifiers,
+    so they're loaded by dotted path via importlib instead."""
     return importlib.import_module(f"data_foundry.scripts.{name}")
 
 
@@ -236,6 +253,8 @@ def assemble_universal_metadata_task(catalog: list, metadata: dict, hashes: dict
 
 @task(name="finalize_run")
 def finalize_run_task(loc_report: dict, uni_report: dict) -> str:
+    """Versioning: write a manifest for this run and repoint data/output/latest
+    at it. Previous runs under data/runs/ are never touched or overwritten."""
     manifest = {
         "run_id": config.RUN_ID,
         "localized_catalog": loc_report,
@@ -253,6 +272,8 @@ def finalize_run_task(loc_report: dict, uni_report: dict) -> str:
     try:
         latest_link.symlink_to(config.RUN_DIR, target_is_directory=True)
     except OSError:
+        # Some filesystems (or Windows without privileges) disallow symlinks;
+        # fall back to a plain copy so `data/output/latest` always works.
         shutil.copytree(config.RUN_DIR, latest_link)
 
     return config.RUN_ID

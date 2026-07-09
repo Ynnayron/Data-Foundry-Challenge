@@ -1,37 +1,43 @@
 {
   "15713": {
-    "title": "História do Brasil",
-    "author": "Frei Vicente de Salvador",
+    "title": "A escravidão",
+    "author": "Joaquim Nabuco",
     "category": "História",
     "language": "Português",
-    "institution": "[cv] CultVox",
-    "accesses": "25,215",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "39,989",
     "code": "15713",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2268&co_midia=2"
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15713&co_midia=2"
   },
   "15654": {
+    "title": "A República é incontestável",
+    "author": "Joaquim Nabuco",
+    "category": "História",
+    "language": "Português",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "27,152",
     "code": "15654",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2148&co_midia="
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15654&co_midia=2"
   },
   "2268": {
-    "title": "História do Brasil",
-    "author": "Frei Vicente de Salvador",
+    "title": "A Rebelião das Massas",
+    "author": "José Ortega y Gasset",
     "category": "História",
     "language": "Português",
     "institution": "[cv] CultVox",
-    "accesses": "25,216",
+    "accesses": "21,330",
     "code": "2268",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2268&co_midia=2"
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2291&co_midia=2"
   },
   "2291": {
-    "title": "História do Brasil",
-    "author": "Frei Vicente de Salvador",
+    "title": "A Rebelião das Massas",
+    "author": "José Ortega y Gasset",
     "category": "História",
     "language": "Português",
     "institution": "[cv] CultVox",
-    "accesses": "25,215",
+    "accesses": "21,329",
     "code": "2291",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2268&co_midia=2"
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2291&co_midia=2"
   },
   "2148": {
     "title": "Historia do Brasil: 1500-1627",
@@ -39,19 +45,19 @@
     "category": "História",
     "language": "Português",
     "institution": "[bn] Fundação Biblioteca Nacional",
-    "accesses": "18,784",
+    "accesses": "18,786",
     "code": "2148",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2148&co_midia=2"
   },
   "15640": {
-    "title": "Historia do Brasil: 1500-1627",
-    "author": "Frei Vicente de Salvador",
+    "title": "O erro do Imperador",
+    "author": "Joaquim Nabuco",
     "category": "História",
     "language": "Português",
-    "institution": "[bn] Fundação Biblioteca Nacional",
-    "accesses": "18,785",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "13,663",
     "code": "15640",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2148&co_midia=2"
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15640&co_midia=2"
   },
   "18957": {
     "title": "De profecia e inquisição",
@@ -59,7 +65,7 @@
     "category": "História",
     "language": "Português",
     "institution": "[sf] Senado Federal",
-    "accesses": "13,470",
+    "accesses": "13,471",
     "code": "18957",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=18957&co_midia=2"
   },
@@ -69,7 +75,7 @@
     "category": "História",
     "language": "Português",
     "institution": "[ma] Marxists Internet Archive",
-    "accesses": "11,843",
+    "accesses": "11,844",
     "code": "2432",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2432&co_midia=2"
   },
@@ -79,7 +85,7 @@
     "category": "História",
     "language": "Português",
     "institution": "[sf] Senado Federal",
-    "accesses": "10,062",
+    "accesses": "10,063",
     "code": "19202",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19202&co_midia=2"
   },
@@ -89,8 +95,108 @@
     "category": "História",
     "language": "Português",
     "institution": "[sf] Senado Federal",
-    "accesses": "9,440",
+    "accesses": "9,441",
     "code": "19322",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19322&co_midia=2"
+  },
+  "18948": {
+    "title": "Capítulos de história colonial",
+    "author": "João Capistrano de Abreu",
+    "category": "História",
+    "language": "Português",
+    "institution": "[sf] Senado Federal",
+    "accesses": "9,315",
+    "code": "18948",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=18948&co_midia=2"
+  },
+  "18530": {
+    "title": "A abolição",
+    "author": "Joaquim Osório Duque Estrada",
+    "category": "História",
+    "language": "Português",
+    "institution": "[sf] Senado Federal",
+    "accesses": "9,265",
+    "code": "18530",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=18530&co_midia=2"
+  },
+  "15633": {
+    "title": "O povo e o trono: profissão e fé política",
+    "author": "Joaquim Nabuco",
+    "category": "História",
+    "language": "Português",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "9,080",
+    "code": "15633",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15633&co_midia=2"
+  },
+  "19009": {
+    "title": "A independência e o império do Brasil",
+    "author": "Alexandre José de Melo Morais",
+    "category": "História",
+    "language": "Português",
+    "institution": "[sf] Senado Federal",
+    "accesses": "8,591",
+    "code": "19009",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19009&co_midia=2"
+  },
+  "16793": {
+    "title": "O que eu vi, o que nós veremos (com ilustrações)",
+    "author": "Alberto Santos Dumont",
+    "category": "História",
+    "language": "Português",
+    "institution": "[bi] Biblioteca Virtual de Literatura",
+    "accesses": "8,274",
+    "code": "16793",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=16793&co_midia=2"
+  },
+  "15708": {
+    "title": "Carta aos abolicionistas ingleses",
+    "author": "Joaquim Nabuco",
+    "category": "História",
+    "language": "Português",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "8,245",
+    "code": "15708",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15708&co_midia=2"
+  },
+  "15712": {
+    "title": "Campanha abolicionista no Recife: eleições 1884: discurso de Joaquim Nabuco",
+    "author": "Joaquim Nabuco",
+    "category": "História",
+    "language": "Português",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "8,234",
+    "code": "15712",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15712&co_midia=2"
+  },
+  "15643": {
+    "title": "Agradecimento aos pernambucanos",
+    "author": "Joaquim Nabuco",
+    "category": "História",
+    "language": "Português",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "8,141",
+    "code": "15643",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15643&co_midia=2"
+  },
+  "15711": {
+    "title": "Discursos parlamentares: 1849-1910",
+    "author": "Joaquim Nabuco",
+    "category": "História",
+    "language": "Português",
+    "institution": "[jn] Fundação Joaquim Nabuco",
+    "accesses": "7,948",
+    "code": "15711",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15711&co_midia=2"
+  },
+  "19222": {
+    "title": "O Rio de Janeiro do meu tempo",
+    "author": "Luís Edmundo",
+    "category": "História",
+    "language": "Português",
+    "institution": "[sf] Senado Federal",
+    "accesses": "7,828",
+    "code": "19222",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19222&co_midia=2"
   }
 }

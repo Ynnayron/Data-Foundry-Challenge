@@ -6,8 +6,8 @@
     "source": "[jn] Fundação Joaquim Nabuco",
     "format": ".pdf",
     "size": "13.32\r\n              MB",
-    "accesses": "39,984",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2268&co_midia=2",
+    "accesses": "39,989",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15713&co_midia=2",
     "downloaded": true
   },
   {
@@ -17,8 +17,8 @@
     "source": "[jn] Fundação Joaquim Nabuco",
     "format": ".pdf",
     "size": "4.66\r\n              MB",
-    "accesses": "27,150",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2148&co_midia=",
+    "accesses": "27,152",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15654&co_midia=2",
     "downloaded": true
   },
   {
@@ -28,8 +28,8 @@
     "source": "[cv] CultVox",
     "format": ".pdf",
     "size": "603.17\r\n              KB",
-    "accesses": "25,215",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2268&co_midia=2",
+    "accesses": "25,217",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2291&co_midia=2",
     "downloaded": true
   },
   {
@@ -40,8 +40,8 @@
     "format": ".pdf",
     "size": "440.01\r\n              KB",
     "accesses": "21,329",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2268&co_midia=2",
-    "downloaded": false
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2291&co_midia=2",
+    "downloaded": true
   },
   {
     "code": "2148",
@@ -50,7 +50,7 @@
     "source": "[bn] Fundação Biblioteca Nacional",
     "format": ".pdf",
     "size": "1.15\r\n              MB",
-    "accesses": "18,784",
+    "accesses": "18,786",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2148&co_midia=2",
     "downloaded": true
   },
@@ -61,8 +61,8 @@
     "source": "[jn] Fundação Joaquim Nabuco",
     "format": ".pdf",
     "size": "4.83\r\n              MB",
-    "accesses": "13,662",
-    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2148&co_midia=2",
+    "accesses": "13,663",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15640&co_midia=2",
     "downloaded": true
   },
   {
@@ -72,7 +72,7 @@
     "source": "[sf] Senado Federal",
     "format": ".pdf",
     "size": "2.09\r\n              MB",
-    "accesses": "13,470",
+    "accesses": "13,471",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=18957&co_midia=2",
     "downloaded": true
   },
@@ -83,7 +83,7 @@
     "source": "[ma] Marxists Internet Archive",
     "format": ".pdf",
     "size": "389.18\r\n              KB",
-    "accesses": "11,843",
+    "accesses": "11,844",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=2432&co_midia=2",
     "downloaded": true
   },
@@ -94,7 +94,7 @@
     "source": "[sf] Senado Federal",
     "format": ".pdf",
     "size": "971.66\r\n              KB",
-    "accesses": "10,062",
+    "accesses": "10,063",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19202&co_midia=2",
     "downloaded": true
   },
@@ -105,8 +105,118 @@
     "source": "[sf] Senado Federal",
     "format": ".pdf",
     "size": "0.00\r\n              KB",
-    "accesses": "9,440",
+    "accesses": "9,441",
     "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19322&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "18948",
+    "title": "Capítulos de história colonial",
+    "author": "João Capistrano de Abreu",
+    "source": "[sf] Senado Federal",
+    "format": ".pdf",
+    "size": "2.15\r\n              MB",
+    "accesses": "9,315",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=18948&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "18530",
+    "title": "A abolição",
+    "author": "Joaquim Osório Duque Estrada",
+    "source": "[sf] Senado Federal",
+    "format": ".pdf",
+    "size": "871.32\r\n              KB",
+    "accesses": "9,265",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=18530&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "15633",
+    "title": "O povo e o trono: profissão e fé política",
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco",
+    "format": ".pdf",
+    "size": "5.12\r\n              MB",
+    "accesses": "9,080",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15633&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "19009",
+    "title": "A independência e o império do Brasil",
+    "author": "Alexandre José de Melo Morais",
+    "source": "[sf] Senado Federal",
+    "format": ".pdf",
+    "size": "1.61\r\n              MB",
+    "accesses": "8,591",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19009&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "16793",
+    "title": "O que eu vi, o que nós veremos (com ilustrações)",
+    "author": "Alberto Santos Dumont",
+    "source": "[bi] Biblioteca Virtual de Literatura",
+    "format": ".pdf",
+    "size": "424.15\r\n              KB",
+    "accesses": "8,274",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=16793&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "15708",
+    "title": "Carta aos abolicionistas ingleses",
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco",
+    "format": ".pdf",
+    "size": "10.18\r\n              MB",
+    "accesses": "8,245",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15708&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "15712",
+    "title": "Campanha abolicionista no Recife: eleições 1884: discurso de Joaquim Nabuco",
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco",
+    "format": ".pdf",
+    "size": "25.06\r\n              MB",
+    "accesses": "8,234",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15712&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "15643",
+    "title": "Agradecimento aos pernambucanos",
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco",
+    "format": ".pdf",
+    "size": "2.68\r\n              MB",
+    "accesses": "8,141",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15643&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "15711",
+    "title": "Discursos parlamentares: 1849-1910",
+    "author": "Joaquim Nabuco",
+    "source": "[jn] Fundação Joaquim Nabuco",
+    "format": ".pdf",
+    "size": "49.94\r\n              MB",
+    "accesses": "7,948",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=15711&co_midia=2",
+    "downloaded": true
+  },
+  {
+    "code": "19222",
+    "title": "O Rio de Janeiro do meu tempo",
+    "author": "Luís Edmundo",
+    "source": "[sf] Senado Federal",
+    "format": ".pdf",
+    "size": "4.05\r\n              MB",
+    "accesses": "7,828",
+    "download_url": "https://dominiopublico.mec.gov.br/pesquisa/DetalheObraDownload.do?select_action=&co_obra=19222&co_midia=2",
     "downloaded": true
   }
 ]
