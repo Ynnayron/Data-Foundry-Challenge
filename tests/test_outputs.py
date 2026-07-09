@@ -1,3 +1,5 @@
+#needed to write new tests for the outputs of the pipeline, to ensure that the outputs are consistent and meet the expected criteria.
+
 import json
 from pathlib import Path
 
@@ -72,8 +74,8 @@ def test_outputs_consistent():
     loc_ids = {e["id"] for e in load_json(LATEST_DIR, "localized_catalog.json")}
     uni_ids = {e["id"] for e in load_json(LATEST_DIR, "universal_metadata.json")}
     cat_ids = {e["code"] for e in load_json(RAW_DIR, "catalog.json") if e.get("downloaded")}
-    # universal_metadata dedupes by document_hash, so it may be <= cat_ids;
-    # localized_catalog dedupes by id, so it should match 1:1 with downloaded books.
+    # universal_metadata dedupes by document_hash, so it may be <= cat_ids
+    # localized_catalog dedupes by id, so it should match 1:1 with downloaded books
     assert loc_ids == cat_ids
     assert uni_ids <= cat_ids
 

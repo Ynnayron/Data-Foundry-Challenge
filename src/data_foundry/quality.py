@@ -1,10 +1,4 @@
-"""Data-quality helpers used when assembling the final datasets (target area 5).
-
-Covers: encoding normalization, duplicate detection (by document hash),
-missing-field bookkeeping, and schema validation against schemas.py.
-Every issue found is recorded in a report instead of failing silently or
-crashing the whole run.
-"""
+#Data-quality helpers used when assembling the final datasets 
 
 import unicodedata
 from typing import Any
