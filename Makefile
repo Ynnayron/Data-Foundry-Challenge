@@ -1,4 +1,4 @@
-.PHONY: setup setup-ollama ollama-up ollama-pull run run-all download hash describe translate translate-descriptions covers localized-catalog universal-metadata test lint
+.PHONY: setup setup-ollama ollama-up ollama-pull run run-flow run-legacy download hash describe translate translate-descriptions covers localized-catalog universal-metadata test lint clean-runs
 
 ollama-up:
 	docker compose up -d ollama
@@ -11,9 +11,17 @@ setup:
 
 setup-ollama: setup ollama-up ollama-pull
 
+# Full pipeline via Docker, orchestrated by the Prefect flow (event-driven,
+# see src/data_foundry/pipeline.py). This is the target the challenge expects.
 run:
 	docker compose up --build pipeline
 
+# Run the Prefect flow locally (no Docker), e.g. for development.
+run-flow:
+	uv run python -m data_foundry.pipeline
+
+# Individual stages, useful for debugging one step at a time. Each is
+# idempotent: re-running only fills in what's missing.
 download:
 	uv run python src/data_foundry/scripts/01_download.py
 
@@ -38,7 +46,9 @@ localized-catalog:
 universal-metadata:
 	uv run python src/data_foundry/scripts/08_universal_metadata.py
 
-run-all: download hash describe translate translate-descriptions covers localized-catalog universal-metadata
+# Legacy: same 8 stages, run sequentially without Prefect (kept for comparison
+# / as a fallback if Prefect is unavailable).
+run-legacy: download hash describe translate translate-descriptions covers localized-catalog universal-metadata
 
 test:
 	uv run pytest tests/ -v
@@ -46,3 +56,7 @@ test:
 lint:
 	uv run ruff check --fix src/ tests/
 	uv run ruff format src/ tests/
+
+# Versioning cleanup helper: data/runs/ accumulates one folder per execution.
+clean-runs:
+	find data/runs -mindepth 1 -maxdepth 1 -type d | sort | head -n -5 | xargs -r rm -rf

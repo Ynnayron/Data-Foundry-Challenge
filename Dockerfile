@@ -8,4 +8,7 @@ COPY . .
 
 RUN uv sync
 
-CMD ["uv", "run", "python", "src/data_foundry/main.py"]
+# Playwright is the fallback scraper for 01_download.py when curl-cffi is blocked.
+RUN uv run playwright install --with-deps chromium
+
+CMD ["uv", "run", "python", "-m", "data_foundry.main"]
